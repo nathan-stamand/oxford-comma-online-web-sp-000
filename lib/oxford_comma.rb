@@ -5,6 +5,11 @@ def oxford_comma(array)
     when 2 
       return array.join(" and ")
     else
-      return
+      i = 0;
+      new_array = []
+      while i < array.length-1 do
+        new_array.push(array[i])
+      end
+      "#{new_array.join(", ")}, and #{array[array.length-1]}"
     end
   end
