@@ -9,6 +9,7 @@ def oxford_comma(array)
       new_array = []
       while i < array.length-1 do
         new_array.push(array[i])
+        i += 1
       end
       "#{new_array.join(", ")}, and #{array[array.length-1]}"
     end
